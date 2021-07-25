@@ -1,0 +1,127 @@
+.body {
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: calc(100vh - 15rem);
+  box-shadow: 0 1.5rem 6rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  background: linear-gradient(to right, orangered, purple);
+  & .wider {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    & .content {
+      position: relative;
+      width: 100%;
+      height: 40%;
+      display: flex;
+      align-items: center;
+      & .deg {
+        position: inherit;
+        & h1 {
+          font-size: 5rem;
+          text-transform: uppercase;
+          font-family: "Rubik-Light";
+          color: #fff;
+        }
+      }
+      & .loc {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        & .cou {
+          position: inherit;
+          padding-left: 2rem;
+          & h2 {
+            font-size: 3rem;
+            text-transform: capitalize;
+            font-family: "Rubik-Light";
+            color: #fff;
+          }
+        }
+        & .date {
+          position: relative;
+          display: flex;
+          // width: 100%;
+          padding-left: 2rem;
+          & span {
+            text-transform: capitalize;
+            font-family: "Rubik-Light";
+            & h1 {
+              font-size: 1.5rem;
+              color: #fff;
+            }
+          }
+        }
+      }
+      & .desc {
+        position: relative;
+        padding-left: 2rem;
+        text-transform: capitalize;
+        font-family: "Rubik-Light";
+        & h1 {
+          font-size: 1.7rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+  & .lesser {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(#000, 0.3);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .details {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      // height: 40%;
+      padding: 1rem;
+      border-top: 2px solid rgba(#fff, 0.4);
+      border-bottom: 2px solid rgba(#fff, 0.4);
+      & .det {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          text-align: center;
+          font-family: "Rubik-Light";
+          font-size: 2.1rem;
+          color: #fff;
+          margin-bottom: 2rem;
+          text-transform: uppercase;
+        }
+      }
+      & div {
+        position: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+        font-family: "Rubik-Light";
+        margin-top: 1rem;
+        & h1 {
+          font-size: 1.7rem;
+          color: #fff;
+          display: inline-block;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

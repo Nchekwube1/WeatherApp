@@ -1,0 +1,190 @@
+.body {
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: calc(100vh - 15rem);
+  -webkit-box-shadow: 0 1.5rem 6rem;
+          box-shadow: 0 1.5rem 6rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(orangered), to(purple));
+  background: linear-gradient(to right, orangered, purple);
+}
+
+.body .wider {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.body .wider .content {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .wider .content .deg {
+  position: inherit;
+}
+
+.body .wider .content .deg h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: "Rubik-Light";
+  color: #fff;
+}
+
+.body .wider .content .loc {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .wider .content .loc .cou {
+  position: inherit;
+  padding-left: 2rem;
+}
+
+.body .wider .content .loc .cou h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: "Rubik-Light";
+  color: #fff;
+}
+
+.body .wider .content .loc .date {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2rem;
+}
+
+.body .wider .content .loc .date span {
+  text-transform: capitalize;
+  font-family: "Rubik-Light";
+}
+
+.body .wider .content .loc .date span h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.body .wider .content .desc {
+  position: relative;
+  padding-left: 2rem;
+  text-transform: capitalize;
+  font-family: "Rubik-Light";
+}
+
+.body .wider .content .desc h1 {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.body .lesser {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .lesser .details {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  padding: 1rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.body .lesser .details .det {
+  position: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .lesser .details .det h1 {
+  display: inline-block;
+  text-align: center;
+  font-family: "Rubik-Light";
+  font-size: 2.1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.body .lesser .details div {
+  position: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  font-family: "Rubik-Light";
+  margin-top: 1rem;
+}
+
+.body .lesser .details div h1 {
+  font-size: 1.7rem;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=body.css.map */

@@ -1,0 +1,50 @@
+@keyframes rot {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.load {
+  position: relative;
+  width: 20%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rot 2s linear infinite;
+  margin-left: 40%;
+  margin-top: 10rem;
+  z-index: -2;
+
+  & .circle {
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 1.2rem solid rgba(black, 0.08);
+
+    & .line {
+      position: absolute;
+      width: 1.9rem;
+      height: 1.1rem;
+      border-radius: 2rem;
+      background: linear-gradient(to right, orangered, purple);
+      top: -1.15rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    & .line2 {
+      position: absolute;
+      width: 1.9rem;
+      height: 1.1rem;
+      border-radius: 2rem;
+      background: linear-gradient(to bottom, orangered, purple);
+      bottom: -1.15rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

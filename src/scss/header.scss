@@ -1,0 +1,121 @@
+.head {
+  width: 100%;
+  height: 8rem;
+  box-shadow: 0 0.3rem 3rem rgba(black, 0.2);
+  padding: 0.3rem 2rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  //     font-family: "Lobster-Regular";
+  //  font-family: "Poppins-Light";
+  //   font-family: "Courgette-Regular";
+  //   font-family: "Roboto-Regular";
+  //   font-family: "Ranchers-Regular";
+  //    font-family: "Rubik-Light";
+  & .title {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    // background-color: red;
+    position: relative;
+    & h2 {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-family: "Rubik-Light";
+      background: linear-gradient(to right, orangered, purple);
+      background-clip: text;
+      color: transparent;
+
+      & span {
+        text-transform: lowercase;
+        font-family: "Courgette-Regular";
+        color: red;
+      }
+    }
+  }
+  & .input {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    // background-color: red;
+
+    & .inpF {
+      width: 100%;
+      height: 100%;
+      position: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & .ifield {
+        width: 100%;
+        height: 70%;
+        outline: none;
+        border: 2px solid #ddd;
+        border-radius: 3px;
+        font-size: 1.6rem;
+        font-family: "Poppins-Light";
+        text-transform: capitalize;
+        text-indent: 0.5rem;
+        padding-right: 8rem;
+      }
+      & .btn {
+        position: absolute;
+        top: 20%;
+        right: 0.4rem;
+        width: 7rem;
+        height: 60%;
+        border: none;
+        outline: none;
+        background: linear-gradient(to right, orangered, purple);
+        color: white;
+        font-size: 1.8rem;
+        font-family: "Poppins-Light";
+        text-transform: capitalize;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: all 0.2s;
+        &:active {
+          transform: scale(0.94);
+        }
+      }
+    }
+  }
+  & .tags {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    & .tgs {
+      display: flex;
+      list-style-type: none;
+      text-decoration: none;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      //   background-color: red;
+      & li {
+        font-size: 1.8rem;
+        font-family: "Rubik-Light";
+        display: inline-block;
+        padding: 0.9rem;
+        margin-right: 0.5rem;
+        transform-origin: all 0.2s;
+        border-right: 2px solid #ddd;
+
+        &:hover {
+          background: linear-gradient(to right, orangered, purple);
+          border-radius: 3px;
+          cursor: pointer;
+          border-right: 2px solid #fff;
+          color: white;
+        }
+      }
+    }
+  }
+}

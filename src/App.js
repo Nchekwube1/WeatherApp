@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import { useState, useEffect } from 'react'
+import "./scss/app.css"
+import Body from "./body"
+import Loading from './Loading'
+import env from "./dotenv"
+
+
+
+const city = "Nigeria"
+const weatherKey = env.weatherKey
+const fet = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherKey}`
 
 function App() {
+  const [load, setload] = useState(true)
+  const [body, setBody] = useState({})
+  async function Fetch(url) {
+    let response = await fetch(url)
+    let data = await response.json()
+    setload(false)
+    setBody(data)
+    console.log(data)
+
+  }
+
+  useEffect(() => {
+
+
+    Fetch(fet)
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      {load ? <Loading /> : <Body body={body} />}
+    </>
   );
 }
 

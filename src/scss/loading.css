@@ -1,0 +1,76 @@
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.load {
+  position: relative;
+  width: 20%;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: rot 2s linear infinite;
+          animation: rot 2s linear infinite;
+  margin-left: 40%;
+  margin-top: 10rem;
+  z-index: -2;
+}
+
+.load .circle {
+  position: relative;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 1.2rem solid rgba(0, 0, 0, 0.08);
+}
+
+.load .circle .line {
+  position: absolute;
+  width: 1.9rem;
+  height: 1.1rem;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(orangered), to(purple));
+  background: linear-gradient(to right, orangered, purple);
+  top: -1.15rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.load .circle .line2 {
+  position: absolute;
+  width: 1.9rem;
+  height: 1.1rem;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(orangered), to(purple));
+  background: linear-gradient(to bottom, orangered, purple);
+  bottom: -1.15rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=loading.css.map */
